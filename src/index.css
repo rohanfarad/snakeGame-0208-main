@@ -1,0 +1,99 @@
+.center {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  text-align: center;
+  min-height: 99vh;
+  max-height: auto;
+}
+.setting {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  text-align: center;
+  max-height: auto;
+}
+h1 {
+  font-size: 50px;
+  color: rgb(253, 253, 253);
+  margin: 0;
+  padding: 0;
+  background-color: chocolate;
+}
+.heading {
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.board {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  outline: solid 20px rgb(228, 158, 54);
+}
+.boardCell {
+  width: 14px;
+  height: 14px;
+  border: solid 1px rgba(241, 240, 240, 0);
+  border-radius: 5px;
+  /* background-color: rgb(241, 240, 240); */
+}
+.snake {
+  width: 14px;
+  height: 14px;
+  border: solid 1px rgb(241, 240, 240);
+  border-radius: 5px;
+  background-color: rgb(28, 107, 197);
+}
+.food {
+  width: 14px;
+  height: 14px;
+  border: solid 1px rgb(241, 240, 240);
+  background-color: rgb(224, 26, 26);
+  animation: colorChange 2s infinite;
+}
+.menuOption {
+  width: 200px;
+  height: 30px;
+  border: solid 1px rgb(241, 240, 240);
+  background-color: rgb(218, 162, 58);
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+.menuOption:hover {
+  background-color: rgb(62, 214, 24);
+  width: 200px;
+}
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
